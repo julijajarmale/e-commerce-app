@@ -14,7 +14,8 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
+                       
                       }
                     : null
                 }
@@ -27,7 +28,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
                       }
                     : null
                 }
@@ -40,7 +41,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
                       }
                     : null
                 }
@@ -53,7 +54,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
                       }
                     : null
                 }
@@ -66,7 +67,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
                       }
                     : null
                 }
@@ -79,7 +80,8 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive
                     ? {
-                        color: "crimson",
+                        color: "white",
+                       
                       }
                     : null
                 }
