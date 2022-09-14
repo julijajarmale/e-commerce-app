@@ -1,13 +1,22 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
   return (
        <>
       <div className="container header">
         <div className="row">
-          <div className="col-12">
+          
             <nav className="nav">
+              <div className="logo-col">Shopit!
+              
+              </div>
+              <div className="center-col">
+                <input type="search" placeholder='Search for items and brands'/>
+              <SearchIcon/>
+              </div>
+              <div className="pages">
               <NavLink
                 to="/women"
                 className="nav-link"
@@ -88,11 +97,11 @@ const Navbar = () => {
               >
                 HOME
               </NavLink>
-              
+              </div>
             </nav>
           </div>
         </div>
-      </div>
+     
     </>
 
   )
