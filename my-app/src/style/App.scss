@@ -12,6 +12,7 @@ body {
   font-family: MyLivvic;
 }
 
+// TOP-HEADER
 .top {
   height: 30px;
   background-color: var(--smoke-white);
@@ -47,6 +48,7 @@ body {
   }
 }
 
+//MAIN-HEADER
 .header {
   background-color: var(--gray-dark);
   height: 80px;
@@ -130,12 +132,16 @@ body {
   }
 }
 
+//SLIDER 
+
 .slider-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   background-color: rgb(248, 250, 251);
   position: relative;
+  overflow: hidden;
+  transition: all 2s ease;
 
   .arrow {
     width: 50px;
@@ -149,17 +155,20 @@ body {
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
   }
   .arrow-left {
     left: 10px;
+    
   }
   .arrow-right {
     right: 10px;
   }
 
+  
   .slide {
     display: flex;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
   }
 
@@ -182,6 +191,7 @@ body {
     p {
       margin: 30px 0px;
       font-size: 20px;
+      letter-spacing: 2px;
     }
    
     .button-1 {

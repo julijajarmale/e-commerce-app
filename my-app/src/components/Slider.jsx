@@ -1,33 +1,57 @@
-import React from 'react'
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import React from "react";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { useState } from "react";
+import { sliderItems } from "../data";
+import Wrapper from "./StyledCompontents";
+
 
 const Slider = () => {
+
+
+
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleClick = (direction) => {
+
+    if(direction === 'left') {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
+    }
+  }
+
+
   return (
     <div className="slider-container">
-        <div className="row">
-
-      <div className="arrow arrow-left ">
-      <ArrowBackIosIcon/>
-      </div>
       
-        <div className="slide">
-            <div className="img-container">
-            <img src="https://i.ibb.co/47z24B4/pexels-godisable-jacob-896291.jpg" alt="pexels-godisable-jacob-896291" border="0" />
-            </div>
-            <div className="info-container">
-                <h1>Even more than you expected!</h1>
-                <p>Fashion, Premium, Sneakers, Sportswear and more.</p>
+        <div direction="left" className="arrow arrow-left" onClick={() => handleClick("left")}>
+          <ArrowBackIosIcon />
+        </div>
+        <Wrapper slideIndex ={slideIndex}>
+          {sliderItems.map((item) => (
+            <div key={item.id} className="slide">
+              <div className="img-container">
+                <img
+                  src={item.img}
+                  alt="pexels-godisable-jacob-896291"
+                  border="0"
+                />
+              </div>
+              <div className="info-container">
+                <h1>{item.title}</h1>
+                <p>{item.desc}</p>
                 <button className="button-1">Shop now!</button>
+              </div>
             </div>
-        
-      </div>
-      <div className="arrow arrow-right">
-      <ArrowForwardIosIcon/>
-      </div>
+          ))}
+        </Wrapper>
+        <div direction="right" className="arrow arrow-right" onClick={() => handleClick("right")}>
+          <ArrowForwardIosIcon />
+        </div>
+      
     </div>
-    </div>
-);
-}
+  );
+};
 
-export default Slider
+export default Slider;
