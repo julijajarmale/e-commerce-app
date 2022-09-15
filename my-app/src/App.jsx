@@ -10,7 +10,6 @@ import {
 import Home from "./pages/Home";
 import Women from './pages/Women';
 import Men from './pages/Men';
-import Kids from './pages/Kids';
 import Blog from './pages/Blog';
 import Sale from './pages/Sale';
 
