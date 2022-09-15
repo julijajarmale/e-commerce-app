@@ -3,8 +3,14 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { sliderItems } from "../data";
-import Wrapper from "./StyledCompontents";
+import styled from 'styled-components'
 
+const Wrapper = styled.div`
+height: 100%;
+display: flex;
+transition: all 1s ease;
+transform: translateX(${(props) => props.slideIndex * -100}vw);
+`;
 
 const Slider = () => {
 

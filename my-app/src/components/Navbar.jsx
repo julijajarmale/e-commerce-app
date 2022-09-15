@@ -48,19 +48,7 @@ const Navbar = () => {
               >
                 MEN
               </NavLink>
-              <NavLink
-                to="/kids"
-                className="nav-link"
-                style={({ isActive }) =>
-                  isActive
-                    ? {
-                        color: "white",
-                      }
-                    : null
-                }
-              >
-                KIDS
-              </NavLink>
+             
               <NavLink
                 to="/blog"
                 className="nav-link"
