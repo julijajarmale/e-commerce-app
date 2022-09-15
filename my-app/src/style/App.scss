@@ -57,7 +57,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   box-shadow: 0 4px 10px #0003;
-  
+
   nav {
     display: flex;
     flex-direction: row;
@@ -71,7 +71,7 @@ body {
   .logo-col {
     font-size: 23px;
     color: var(--white);
-    font-weight: bold
+    font-weight: bold;
   }
   .center-col {
     width: 350px;
@@ -127,5 +127,102 @@ body {
   h4,
   p {
     margin-top: 5px;
+  }
+}
+
+.slider-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(248, 250, 251);
+  position: relative;
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  .arrow-left {
+    left: 10px;
+  }
+  .arrow-right {
+    right: 10px;
+  }
+
+  .slide {
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .img-container {
+    height: 100%;
+    flex: 1;
+    img {
+      height: 90%;
+    }
+  }
+
+  .info-container {
+    flex: 1;
+    padding: 50px;
+   
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      margin: 30px 0px;
+      font-size: 20px;
+    }
+   
+    .button-1 {
+      align-items: center;
+      appearance: none;
+      background-color: #fff;
+      border-radius: 24px;
+      border-style: none;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+      box-sizing: border-box;
+      color: #3c4043;
+      cursor: pointer;
+      display: inline-flex;
+      fill: currentcolor;
+      font-family: "Google Sans",Roboto,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 48px;
+      justify-content: center;
+      letter-spacing: .25px;
+      line-height: normal;
+      max-width: 100%;
+      overflow: visible;
+      padding: 2px 24px;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: auto;
+      will-change: transform,opacity;
+      z-index: 0;
+    }
+    
+    .button-1:hover {
+      background: #F6F9FE;
+      color: #090701;
+    }
+  
+    
   }
 }
