@@ -1,15 +1,14 @@
 import React from 'react'
-import flag from '../assets/lt-flag.png'
+import Flag from './flag'
+
 
 function Top() {
   return (
     <div className='top'>
       <ul>
         <li><a href="http://localhost:3000/faq">HELP and FAQs</a></li>
-        <li><button><flag/></button></li>
+        <li><button><Flag/></button></li>
       </ul>
-
-      
     </div>
   )
 }
