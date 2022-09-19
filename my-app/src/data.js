@@ -12,10 +12,6 @@ import prod5 from './assets/products/prod5.jpg';
 import prod6 from './assets/products/prod6.jpg';
 import prod7 from './assets/products/prod7.jpg';
 import prod8 from './assets/products/prod8.jpg';
-import prod9 from './assets/products/prod9.jpg';
-import prod10 from './assets/products/prod10.jpg';
-import prod11 from './assets/products/prod11.jpg';
-import prod12 from './assets/products/prod12.jpg';
 
 
 export const sliderItems = [

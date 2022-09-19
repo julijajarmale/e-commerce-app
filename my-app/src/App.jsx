@@ -12,19 +12,21 @@ import Women from './pages/Women';
 import Men from './pages/Men';
 import Blog from './pages/Blog';
 import Sale from './pages/Sale';
+import ProductList from './pages/ProductList';
+import Product from './pages/Product';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes> 
         <Route path="/" element={<Home/>} />
+        <Route path="/products" element={<ProductList/>} />
+        <Route path="/product" element={<Product/>} />
         <Route path="/women" element={<Women/>} /> 
         <Route path="/men" element={<Men/>} /> 
         <Route path="/blog" element={<Blog/>} /> 
         <Route path="/sale" element={<Sale/>} /> 
-        
     </Routes>
-        
     </BrowserRouter>
 );
 }
