@@ -106,20 +106,5 @@ export const products = [
         img: prod8,
     
     },
-    {
-        id: 9,
-        img: prod9,
-    },
-    {
-        id: 10,
-        img: prod10,
-    },
-    {
-        id: 11,
-        img: prod11,
-    },
-    {
-        id: 12,
-        img: prod12,
-    },
+   
 ];
