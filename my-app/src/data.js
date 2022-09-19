@@ -4,11 +4,24 @@ import slide3 from './assets/slide-3.jpg';
 import boots from './assets/categories/boots.jpg';
 import dress from './assets/categories/dress.jpg';
 import outerwear from './assets/categories/outerwear.jpg';
+import prod1 from './assets/products/prod1.jpg';
+import prod2 from './assets/products/prod2.jpg';
+import prod3 from './assets/products/prod3.jpg';
+import prod4 from './assets/products/prod4.jpg';
+import prod5 from './assets/products/prod5.jpg';
+import prod6 from './assets/products/prod6.jpg';
+import prod7 from './assets/products/prod7.jpg';
+import prod8 from './assets/products/prod8.jpg';
+import prod9 from './assets/products/prod9.jpg';
+import prod10 from './assets/products/prod10.jpg';
+import prod11 from './assets/products/prod11.jpg';
+import prod12 from './assets/products/prod12.jpg';
+
 
 export const sliderItems = [
     {
         id: 1,
-        img: slide1,
+        img: slide3,
         title: "Even more than you expected!",
         desc: "Fashion, Premium, Sneakers, Sportswear and more.",
        
@@ -22,7 +35,7 @@ export const sliderItems = [
     },
     {
         id: 3,
-        img: slide3,
+        img: slide1,
         title: "Free shipping and returns",
         desc: "The best things are free",
         
@@ -51,5 +64,62 @@ export const categories = [
         title: "OUTERWEAR",
         desc: "Beat-the-chill",
         
+    },
+];
+
+export const products = [
+    {
+        id: 1,
+        img: prod1,
+    
+    },
+    {
+        id: 2,
+        img: prod2,
+    },
+    {
+        id: 3,
+        img: prod3,
+        
+    }, 
+    
+    {
+        id: 4,
+        img: prod4,
+    
+    },
+    {
+        id: 5,
+        img: prod5,
+    },
+    {
+        id: 6,
+        img: prod6,
+    
+    },
+    {
+        id: 7,
+        img: prod7,
+    },
+    {
+        id: 8,
+        img: prod8,
+    
+    },
+    {
+        id: 9,
+        img: prod9,
+    },
+    {
+        id: 10,
+        img: prod10,
+    },
+    {
+        id: 11,
+        img: prod11,
+    },
+    {
+        id: 12,
+        img: prod12,
     },
 ];

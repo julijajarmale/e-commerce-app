@@ -8,7 +8,7 @@ function Categories() {
     <div className="category-container">
 
       {categories.map( item => (
-        <CategoryItem item ={item}/>
+        <CategoryItem   key={item.id} item ={item}/>
         ))}
       </div>
    
