@@ -1,26 +1,23 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Top from './Top';
-import Announcement from './Announcement';
-
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Top from "./Top";
+import Announcement from "./Announcement";
 
 const Navbar = () => {
   return (
-       <>
-      <Top/>
+    <>
+      <Top />
       <div className="container header">
         <div className="row">
-            <nav className="nav">
-              <div className="logo-col">Shopit!
-              
-              </div>
-              <div className="center-col">
-                <input type="search" placeholder='Search for items and brands'/>
-              <SearchIcon/>
-              </div>
-              <div className="pages">
+          <nav className="nav">
+            <div className="logo-col">Shopit!</div>
+            <div className="center-col">
+              <input type="search" placeholder="Search for items and brands" />
+              <SearchIcon />
+            </div>
+            <div className="pages">
               <NavLink
                 to="/women"
                 className="nav-link"
@@ -28,7 +25,6 @@ const Navbar = () => {
                   isActive
                     ? {
                         color: "white",
-                       
                       }
                     : null
                 }
@@ -48,7 +44,7 @@ const Navbar = () => {
               >
                 MEN
               </NavLink>
-             
+
               <NavLink
                 to="/blog"
                 className="nav-link"
@@ -82,23 +78,20 @@ const Navbar = () => {
                   isActive
                     ? {
                         color: "white",
-                       
                       }
                     : null
                 }
               >
                 HOME
               </NavLink>
-              </div>
-              <ShoppingCartIcon className='cart'/>
-            </nav>
-          </div>
+            </div>
+            <ShoppingCartIcon className="cart" />
+          </nav>
         </div>
-        <Announcement/>
-     
+      </div>
+      <Announcement />
     </>
+  );
+};
 
-  )
-}
-
-export default Navbar
+export default Navbar;

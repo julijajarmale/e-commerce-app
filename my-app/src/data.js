@@ -1,21 +1,26 @@
+import slide1 from './assets/slide-1.jpg';
+import slide2 from './assets/slide-2.jpg';
+import slide3 from './assets/slide-3.jpg';
+
+
 export const sliderItems = [
     {
         id: 1,
-        img: "https://i.ibb.co/47z24B4/pexels-godisable-jacob-896291.jpg",
+        img: slide1,
         title: "Even more than you expected!",
         desc: "Fashion, Premium, Sneakers, Sportswear and more.",
        
     },
     {
         id: 2,
-        img: "https://i.ibb.co/4NvyRz2/pexels-gift-habeshaw-2919734.jpg",
+        img: slide2,
         title: "Discover your brands!",
         desc: "Discover the brands you follow. Follow brands to be the first to see their news",
         
     },
     {
         id: 3,
-        img: "https://i.ibb.co/wprrkw7/pexels-elias-de-carvalho-1144834-1.jpg",
+        img: slide3,
         title: "Free shipping and returns",
         desc: "The best things are free",
         
