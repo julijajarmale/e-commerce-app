@@ -461,55 +461,117 @@ body {
       color: #090701;
     }
   }
-  }
+}
 //NEWSLETTER
-  .news-container{
-padding: 20px;
-background-color: var(--light-gray);
-height: 60vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-    .title{
-font-weight: 700;
-font-size: 48px;
-margin-bottom: 40px;
-    }
-
-    .desc{
-font-weight: 400;
-font-size: 24px;
-text-align: center;
-    }
-
-    .input-container{
-display: flex;
-flex-direction: row;
-margin-top: 30px;
-      input{
-        width: 350px;
-        border: 1;
-        height: 40px;
-        border-radius: 19px/50%;
-        padding-left: 50px;
-        padding-right: 16px;
-        box-sizing: border-box;
-        color: var(--gray);
-        background: var(--white);
-        display: flex;
-
-      }
-
-      button{
-width: 40px;
-height: 40px;
-background-color: var(--light-gray);
-margin-left: 10px;
-border: none;
-cursor: pointer;
-
-      }
-    }
-
+.news-container {
+  padding: 20px;
+  background-color: var(--light-gray);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 40px;
   }
+
+  .desc {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    input {
+      width: 350px;
+      border: 1;
+      height: 40px;
+      border-radius: 19px/50%;
+      padding-left: 50px;
+      padding-right: 16px;
+      box-sizing: border-box;
+      color: var(--gray);
+      background: var(--white);
+      display: flex;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: var(--light-gray);
+      margin-left: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-container{
+display: flex;
+padding: 10px;
+  .left{
+flex:1;
+padding:20px;
+
+.logo{
+font-size: 35px;
+margin-bottom: 20px;
+}
+
+.desc{
+margin-bottom: 30px;
+}
+
+.social-container{
+
+display: flex;
+
+  .social-icon{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+  }
+
+.center{
+  flex:1;
+  padding:20px;
+
+  .title{
+margin-bottom: 30px;
+  }
+
+  ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+    li{
+width:50%;
+margin-bottom: 10px;
+cursor: pointer;
+    }
+  }
+}
+  .right{
+    flex:1;
+    padding:20px;
+
+    .title{
+      margin-bottom: 30px;
+    }
+    .contact-item{
+      cursor: pointer;
+      margin-bottom: 20px;
+
+    }
+  }
+
+
+}
