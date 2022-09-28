@@ -14,6 +14,8 @@ import Blog from './pages/Blog';
 import Sale from './pages/Sale';
 import ProductList from './pages/ProductList';
 import Product from './pages/Product';
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/products" element={<ProductList/>} />
         <Route path="/product" element={<Product/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/women" element={<Women/>} /> 
         <Route path="/men" element={<Men/>} /> 
         <Route path="/blog" element={<Blog/>} /> 
