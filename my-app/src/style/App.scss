@@ -395,6 +395,8 @@ body {
   }
 }
 
+//SINGLE PRODUCT
+
 .p-container {
   padding: 50px;
   display: flex;
@@ -409,6 +411,8 @@ body {
 
   .info-container {
     margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
 
     .title {
       font-family: 200;
@@ -419,6 +423,25 @@ body {
     .price {
       font-weight: 100;
       font-size: 20px;
+    }
+    .filter{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60%;
+      margin: 20px;
+    }
+    .add{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width:20%;
+     margin-bottom: 20px;
+  p{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
     }
     .button-1 {
       align-items: center;
