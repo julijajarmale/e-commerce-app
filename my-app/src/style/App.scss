@@ -148,6 +148,7 @@ body {
 
     svg {
       height: 100%;
+      cursor: pointer;
     }
   }
 
@@ -163,6 +164,9 @@ body {
     margin-left: 30px;
     font-size: 18px;
     color: gray;
+  }
+  .cart{
+    cursor: pointer;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -386,6 +390,7 @@ body {
 .product-title {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .products-container {
   display: flex;
